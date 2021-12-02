@@ -13,7 +13,7 @@ public class Main {
 				cnt++;
 			}else {
 				answer += str.charAt(i);
-				if(cnt > 1) {
+				if(cnt >= 1) {
 					answer += String.valueOf(cnt);
 					cnt = 1;
 				}

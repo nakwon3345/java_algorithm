@@ -1,7 +1,6 @@
 package _2_1_큰수출력하기;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {

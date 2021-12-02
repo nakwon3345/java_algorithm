@@ -1,33 +1,30 @@
-package _2_2_보이는학생;
+package _2_7_점수계산;
 
 import java.util.Scanner;
 
 public class Main {
 	
-	public int solution(int t, int[] arr){
-		int answer = 1;
-		int max = arr[0];
-		for(int i = 1; i < t; i++) {
-			if(arr[i] > max) {
-				max = arr[i];
-				answer++;
+	public static int solution(int t, int[] arr){
+		int answer = 0;
+		int cnt = 0;
+		for(int i = 0; i < t; i++) {
+			if(arr[i] == 1) {
+				cnt++;
+				answer += cnt;
+			}else {
+				cnt = 0;
 			}
-			
 		}
 		return answer;
 	}
 	
 	public static void main(String[] args) {
-		Main T = new Main();
 		Scanner kb = new Scanner(System.in);
 		int t = kb.nextInt();
 		int[] arr = new int[t];
 		for(int i = 0; i < t; i++) {
 			arr[i] = kb.nextInt();
 		}
-		
-		System.out.println(T.solution(t, arr));
-		
+		System.out.println(solution(t, arr));
 	}
-
 }
