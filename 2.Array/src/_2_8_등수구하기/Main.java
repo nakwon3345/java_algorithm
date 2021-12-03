@@ -3,17 +3,17 @@ package _2_8_등수구하기;
 import java.util.Scanner;
 
 public class Main {
-	
-	public static int solution(int t, int[] arr){
-		int answer = 0;
-		int cnt = 0;
+	// arr배열과 점수가 순서대로 정렬된 배열에서 번호를 매기고 그 점수를 arr로 변환(동일 등수일 때 불가?)?
+	public static int[] solution(int t, int[] arr){
+		int[] answer = new int[t];
 		for(int i = 0; i < t; i++) {
-			if(arr[i] == 1) {
-				cnt++;
-				answer += cnt;
-			}else {
-				cnt = 0;
+			int cnt = 1;
+			for(int j = 0; j < t; j++) {
+				if(arr[i] < arr[j]) {
+					cnt++;
+				}
 			}
+			answer[i] = cnt;
 		}
 		return answer;
 	}
@@ -25,6 +25,8 @@ public class Main {
 		for(int i = 0; i < t; i++) {
 			arr[i] = kb.nextInt();
 		}
-		System.out.println(solution(t, arr));
+		for(int x : solution(t, arr)) {
+			System.out.print(x + " ");
+		}
 	}
 }
