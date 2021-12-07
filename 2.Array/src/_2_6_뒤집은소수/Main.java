@@ -2,7 +2,7 @@ package _2_6_뒤집은소수;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-// 숫자 뒤집기?
+
 public class Main {
 	public static boolean isPrime(int num) {
 		if(num == 1) {

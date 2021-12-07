@@ -7,10 +7,10 @@ public class Main {
 	public static int solution(int t){
 		int answer = 0;
 		int[] tmp = new int[t + 1];
-		for(int i = 2; i <= t; i++) {
-			if(tmp[i] == 0) {
+		for(int i = 2; i <= t; i++){
+			if(tmp[i] == 0){
 				answer++;
-				for(int j = i; j <= t; j = j + 1) {
+				for(int j = i; j <= t; j = j + i) {
 					tmp[j] = 1;
 				}
 			}
