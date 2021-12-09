@@ -1,6 +1,7 @@
 package _2_6_뒤집은소수;
 
 import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class Main {
