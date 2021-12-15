@@ -1,7 +1,7 @@
 package practice3;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -11,16 +11,15 @@ public class Main_3_2 {
 		int[] result = new int[arr.length + brr.length];
 		System.arraycopy(arr, 0, result, 0, arr.length);
 		System.arraycopy(brr, 0, result, arr.length, brr.length);
-		Arrays.sort(result);
-		for(int i = 0; i < result.length - 1; i++) {
-			for(int j = i + 1; j < result.length; j++) {
-				if(result[i] == result[j]) {
+		for(int i = 0; i < t; i++) {
+			for(int j = 0; j < t; j++) {
+				if(arr[i] == brr[j]) {
 					answer.add(result[i]);
+					Collections.sort(answer);
 				}
 			}
 		}
 		return answer;
-		
 	}
 	
 	public static void main(String[] args) {

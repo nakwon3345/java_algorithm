@@ -2,7 +2,6 @@ package _3_2_공통원소구하기;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {

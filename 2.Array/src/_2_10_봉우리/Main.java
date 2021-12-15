@@ -18,7 +18,6 @@ public class Main {
 						break;
 					}
 				}
-				//flag = true문 여기 쓰는 이유는?? else만들어서 쓸 때 안되는 이유는??
 				if(flag){
 					answer++;
 				}
