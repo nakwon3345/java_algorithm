@@ -9,9 +9,8 @@ public class Main {
 		int lt = 0;
 		int m = t/2+1;
 		int[] arr = new int[t];
-		// m을 주석처리하고 t - 1로 해도 가능한데 이유는(t는 안되는 이유는?)?? m사용 이유는??
 		for(int i = 0; i < m; i++) {
-			arr[i] = i +1;
+			arr[i] = i + 1;
 		}
 		for(int i = 0; i < m; i++) {
 			sum += arr[i];

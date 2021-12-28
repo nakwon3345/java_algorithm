@@ -1,10 +1,10 @@
-package _4_1_학급회장;
+package practice4;
 
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class Main {
-	public static char solution(int t, String str){
+	public static char solution(int t, String str) {
 		char answer = ' ';
 		HashMap<Character, Integer> map = new HashMap<>();
 		for(char x : str.toCharArray()) {
@@ -12,14 +12,12 @@ public class Main {
 		}
 		int max = 0;
 		for(char key : map.keySet()) {
-			//System.out.println(x + " " + map.get(x));
 			if(map.get(key) > max) {
 				max = map.get(key);
 				answer = key;
 			}
 		}
 		return answer;
-		
 	}
 	
 	public static void main(String[] args) {
@@ -28,4 +26,5 @@ public class Main {
 		String str = kb.next();
 		System.out.println(solution(t, str));
 	}
+
 }
